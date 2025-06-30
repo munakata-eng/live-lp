@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAI - AIプログラミング学習コミュニティ</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #50e3c2;
+            --dark-color: #333;
+            --light-color: #f4f4f4;
+            --text-color: #555;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: var(--primary-color);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--light-color);
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.2em;
+            color: var(--dark-color);
+            font-weight: 600;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .feature-item {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .testimonial {
+            background: var(--light-color);
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .testimonial p {
+            margin: 0 0 10px 0;
+            font-style: italic;
+        }
+
+        .testimonial cite {
+            display: block;
+            text-align: right;
+            font-weight: bold;
+            color: var(--dark-color);
+        }
+
+        footer {
+            background: var(--dark-color);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>未来を創る、AIプログラミングを学ぶならCodeAI</h1>
+            <p>未経験から最先端へ。仲間と共に成長する、実践型AI学習コミュニティ。</p>
+            <a href="#features" class="cta-button">今すぐ学習を始める</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>CodeAIとは？</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+                CodeAIは、AI技術を学びたい人々が集まり、知識を共有し、共にプロジェクトに取り組むためのオンラインコミュニティです。
+                最新のトレンド、実践的なスキル、そして何よりも共に学ぶ仲間がここにいます。
+                初心者の方も、現役のエンジニアも、AIという共通のテーマで繋がり、次のステップへと進むことができます。
+            </p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>コミュニティの特徴</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>エキスパートによるメンタリング</h3>
+                    <p>業界の第一線で活躍するエンジニアが、あなたの学習をサポート。コードレビューやキャリア相談も可能です。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>実践的なプロジェクト</h3>
+                    <p>学んだ知識を活かし、実社会の問題を解決するプロジェクトに参加。ポートフォリオを充実させましょう。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>活発な学習コミュニティ</h3>
+                    <p>24時間いつでも質問や議論ができるSlackチャンネル。仲間との交流がモチベーションを高めます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>参加者の声</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"文系出身で不安でしたが、基礎から体系的に学べるカリキュラムと、親切なメンターのおかげで自信がつきました。"</p>
+                    <cite>- 20代・デザイナー</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"最新の論文や技術について議論できる仲間がいるのは非常に刺激になります。一人では続かなかったと思います。"</p>
+                    <cite>- 30代・Webデベロッパー</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="join">
+        <div class="container">
+            <h2>さあ、あなたもAI開発の最前線へ</h2>
+            <a href="#" class="cta-button">コミュニティに参加する</a>
+            <p style="margin-top: 30px; font-size: 0.9em;">&copy; 2025 CodeAI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
